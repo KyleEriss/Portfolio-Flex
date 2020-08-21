@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <title>PortfolioFlex</title>
   </head>
   <body>
 
     <header>
-      <div>
+      <div class="item">
         <h1>Kyle Eriss</h1>
-        <h3>Software Developer</h3>
+      </div>
+      <div class="item">
+        <nav>
+          <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul
+        </nav>
       </div>
     </header>
 
@@ -26,19 +40,17 @@
               <img src="images/profilepicture2.JPG" alt="profilepicture.JPG" class="picture"/>
             </div>
             <div class="item">
-              <p class="introcontact">Hi! I'm Kyle<p>
+              <p class="introcontact">Hi. I'm Kyle!</p>
 
-                  <p>I'm a software developer with a background in workforce development living in Boston, MA. </p>
+                <p>I'm a software developer with a background in workforce development living in Boston, MA. </p>
 
-                  <p>My interests include:</p>
+                <p>My interests include:</p>
 
-                  <ul>
-                  <li>Expanding access to learning and technology</li>
-                  <li>Designing quality websites that engage users</li>
-                  <li>Exploring new places and exchanging ideas with other developers</li>
-                  </ul
-
-                </div>
+                <ul>
+                <li>Expanding access to learning and technology</li>
+                <li>Designing quality websites that engage users</li>
+                <li>Exploring new places and exchanging ideas with other developers</li>
+                </ul
             </div>
           </div> 
         </article> 
@@ -68,7 +80,7 @@
 
       <article class="portfolio">
         <div class="wrapper">
-          <h2>Here's some of my work</h2>
+          <h2>Check out my work</h2>
           <div class="group">
             <div class="item">
               <h3>Project 1</h3>
@@ -89,7 +101,7 @@
               </div>
               <div class="item">
                 <h3>Project 4</h3>
-                <img src="images/vinyard.jpg" alt="otto.JPG" class="rounded"/>
+                <img src="images/otto2.JPG" alt="otto.JPG" class="rounded"/>
                 <p>A description of project 4</p>
               </div>
             </div>
@@ -98,12 +110,28 @@
 
       <article id="contact">
         <div class="wrapper">
-          <p class=introcontact>Contact Kyle</p>
-          <p>If you'd like to connect, follow me on:</p>
-          <ol>
-          <li><a href="https://www.linkedin.com/in/kyle-eriss-94a95a13/" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/KyleEriss" target="_blank">GitHub</a></li>
-          </ol>
+          <p class="introcontact">Contact Kyle</p>
+          <hr class="hrclass"/>
+          <div class="group">
+            <div class="item">
+              <p>If you'd like to connect, follow me on:</p>
+              <ol>
+                <li><a href="https://www.linkedin.com/in/kyle-eriss-94a95a13/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/KyleEriss" target="_blank">GitHub</a></li>
+              </ol>
+            </div>
+            <div class="item">
+              <form action="https://formspree.io/kyle.eriss@gmail.com" method="post">
+                <label for="user-name">Name:</label>
+                <input id="user-name" type="text" name="name">
+                <label for="user-email">Email:</label>
+                <input for="user-email" type="text" name="email">
+                <label for="user-message">Message:</label>
+                <textarea id="user-message" type="text" name="message"></textarea>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
         </div>
       </article>
 
